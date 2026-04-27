@@ -1,0 +1,15 @@
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/bin/Debug/net8.0/CurrencyExchange.Data.deps.json
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/bin/Debug/net8.0/CurrencyExchange.Data.runtimeconfig.json
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/bin/Debug/net8.0/CurrencyExchange.Data.dll
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/bin/Debug/net8.0/CurrencyExchange.Data.pdb
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/obj/Debug/net8.0/CurrencyExchange.Data.csproj.AssemblyReference.cache
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/obj/Debug/net8.0/CurrencyExchange.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/obj/Debug/net8.0/CurrencyExchange.Data.AssemblyInfoInputs.cache
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/obj/Debug/net8.0/CurrencyExchange.Data.AssemblyInfo.cs
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/obj/Debug/net8.0/CurrencyExchange.Data.csproj.CoreCompileInputs.cache
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/obj/Debug/net8.0/CurrencyExchange.Data.sourcelink.json
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/obj/Debug/net8.0/CurrencyExchange.Data.dll
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/obj/Debug/net8.0/refint/CurrencyExchange.Data.dll
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/obj/Debug/net8.0/CurrencyExchange.Data.pdb
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/obj/Debug/net8.0/CurrencyExchange.Data.genruntimeconfig.cache
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Data/obj/Debug/net8.0/ref/CurrencyExchange.Data.dll

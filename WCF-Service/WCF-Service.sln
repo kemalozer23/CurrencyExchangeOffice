@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyExchange.Client", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyExchange.Service", "CurrencyExchange.Service\CurrencyExchange.Service.csproj", "{A651F1C8-F024-4976-8373-AB83B6694887}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyExchange.Data", "CurrencyExchange.Data\CurrencyExchange.Data.csproj", "{DD1F03C2-A8A4-447B-AA3A-1895B895240A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{A651F1C8-F024-4976-8373-AB83B6694887}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A651F1C8-F024-4976-8373-AB83B6694887}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A651F1C8-F024-4976-8373-AB83B6694887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD1F03C2-A8A4-447B-AA3A-1895B895240A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1F03C2-A8A4-447B-AA3A-1895B895240A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1F03C2-A8A4-447B-AA3A-1895B895240A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1F03C2-A8A4-447B-AA3A-1895B895240A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -11,3 +11,6 @@
 /Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Service/obj/Debug/net8.0/refint/CurrencyExchange.Service.dll
 /Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.pdb
 /Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Service/obj/Debug/net8.0/ref/CurrencyExchange.Service.dll
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Service/bin/Debug/net8.0/CurrencyExchange.Data.dll
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Service/bin/Debug/net8.0/CurrencyExchange.Data.pdb
+/Users/kemalozer/Desktop/CurrencyExchangeOffice/WCF-Service/CurrencyExchange.Service/obj/Debug/net8.0/Currency.A72C1431.Up2Date

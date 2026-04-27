@@ -1,5 +1,5 @@
 using System.Text.Json;
-using System.Text.Json.Serialization;
+using CurrencyExchange.Data;
 using CurrencyExchange.Service.Models;
 
 namespace CurrencyExchange.Service;
@@ -7,6 +7,12 @@ namespace CurrencyExchange.Service;
 public class ExchangeService : IExchangeService
 {
     private static readonly HttpClient HttpClient = new();
+    private readonly AppDbContext _db;
+
+    public ExchangeService(AppDbContext db)
+    {
+        _db = db;
+    }
 
     public string SayHello(string name)
     {
@@ -19,12 +25,7 @@ public class ExchangeService : IExchangeService
         {
             var url = $"http://api.nbp.pl/api/exchangerates/rates/A/{currencyCode}/?format=json";
             var response = HttpClient.GetStringAsync(url).Result;
-
-            var options = new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true
-            };
-
+            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
             var nbpResponse = JsonSerializer.Deserialize<NbpResponse>(response, options);
             return nbpResponse?.Rates[0].Mid ?? 0;
         }

@@ -10,30 +10,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b179f11b-d12d-401e-b8e2-5c143ebf055b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CurrencyExchange.Service/HelloService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurrencyExchange.Data/AppDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurrencyExchange.Data/Entities/Balance.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurrencyExchange.Data/Entities/Transaction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurrencyExchange.Data/Entities/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurrencyExchange.Service/Models/NbpResponse.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WCF-Service/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WCF-Service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WCF-Service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/bin/Debug/net8.0/CurrencyExchange.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/bin/Debug/net8.0/CurrencyExchange.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/bin/Debug/net8.0/CurrencyExchange.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/bin/Debug/net8.0/CurrencyExchange.Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/bin/Debug/net8.0/CurrencyExchange.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/bin/Debug/net8.0/CurrencyExchange.Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/bin/Debug/net8.0/CurrencyExchange.Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/bin/Debug/net8.0/CurrencyExchange.Service.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/CurrencyExchange.Client.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/CurrencyExchange.Client.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/CurrencyExchange.Client.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/CurrencyExchange.Client.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/ref/CurrencyExchange.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/ref/CurrencyExchange.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/refint/CurrencyExchange.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/refint/CurrencyExchange.Client.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/CurrencyExchange.Host.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/CurrencyExchange.Host.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/bin/Debug/net8.0/CurrencyExchange.Host.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/bin/Debug/net8.0/CurrencyExchange.Host.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/bin/Debug/net8.0/CurrencyExchange.Host.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/bin/Debug/net8.0/CurrencyExchange.Host.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/bin/Debug/net8.0/CurrencyExchange.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/bin/Debug/net8.0/CurrencyExchange.Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/bin/Debug/net8.0/CurrencyExchange.Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/bin/Debug/net8.0/CurrencyExchange.Service.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/CurrencyExchange.Host.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/CurrencyExchange.Host.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/CurrencyExchange.Host.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/CurrencyExchange.Host.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/ref/CurrencyExchange.Host.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/ref/CurrencyExchange.Host.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/refint/CurrencyExchange.Host.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/refint/CurrencyExchange.Host.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/CurrencyExchange.Service.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/CurrencyExchange.Service.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/HelloService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/ExchangeService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/IHelloService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/IExchangeService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/bin/Debug/net8.0/CurrencyExchange.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/bin/Debug/net8.0/CurrencyExchange.Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/bin/Debug/net8.0/CurrencyExchange.Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/bin/Debug/net8.0/CurrencyExchange.Service.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/CurrencyExchange.Service.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/CurrencyExchange.Service.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/CurrencyExchange.Service.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/CurrencyExchange.Service.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/ref/CurrencyExchange.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/ref/CurrencyExchange.Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/refint/CurrencyExchange.Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/refint/CurrencyExchange.Service.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WCF-Service.sln" beforeDir="false" afterPath="$PROJECT_DIR$/WCF-Service.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WCF-Service/Program.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WCF-Service/Properties/launchSettings.json" beforeDir="false" />
@@ -70,8 +118,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/CurrencyExchange.Client/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CurrencyExchange.Service/HelloService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CurrencyExchange.Service/IHelloService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyExchange.Data/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyExchange.Data/Entities/Balance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyExchange.Data/Entities/Transaction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyExchange.Data/Entities/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyExchange.Service/ExchangeService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyExchange.Service/IExchangeService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyExchange.Service/Models/NbpResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/global.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -195,7 +248,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1777286556447</updated>
-      <workItem from="1777286557743" duration="3145000" />
+      <workItem from="1777286557743" duration="4191000" />
     </task>
     <servers />
   </component>
