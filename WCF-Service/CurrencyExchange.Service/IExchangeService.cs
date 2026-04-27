@@ -3,8 +3,11 @@
 namespace CurrencyExchange.Service;
 
 [ServiceContract]
-public interface IHelloService
+public interface IExchangeService
 {
     [OperationContract]
     string SayHello(string name);
+
+    [OperationContract]
+    decimal GetExchangeRate(string currencyCode);
 }

@@ -11,7 +11,29 @@
   <component name="ChangeListManager">
     <list default="true" id="b179f11b-d12d-401e-b8e2-5c143ebf055b" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/CurrencyExchange.Service/HelloService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WCF-Service/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/CurrencyExchange.Client.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/CurrencyExchange.Client.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/CurrencyExchange.Client.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/CurrencyExchange.Client.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/Debug/net8.0/CurrencyExchange.Client.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Client/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Client/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/CurrencyExchange.Host.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/CurrencyExchange.Host.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/CurrencyExchange.Host.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/CurrencyExchange.Host.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/Debug/net8.0/CurrencyExchange.Host.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Host/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Host/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/CurrencyExchange.Service.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/CurrencyExchange.Service.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/CurrencyExchange.Service.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/CurrencyExchange.Service.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/Debug/net8.0/CurrencyExchange.Service.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyExchange.Service/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyExchange.Service/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WCF-Service.sln" beforeDir="false" afterPath="$PROJECT_DIR$/WCF-Service.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WCF-Service/Program.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WCF-Service/Properties/launchSettings.json" beforeDir="false" />
@@ -173,7 +195,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1777286556447</updated>
-      <workItem from="1777286557743" duration="2194000" />
+      <workItem from="1777286557743" duration="3145000" />
     </task>
     <servers />
   </component>
