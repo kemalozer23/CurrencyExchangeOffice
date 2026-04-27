@@ -55,5 +55,16 @@ var history = client.GetTransactionHistory("kemal");
 foreach (var t in history)
     Console.WriteLine($"{t.Date:yyyy-MM-dd HH:mm} | {t.Type} | {t.Amount} {t.Currency} @ {t.Rate}");
 
+// Test historical rate
+Console.WriteLine($"\n-- Historical Rate --");
+var historical = client.GetHistoricalRate("USD", "2024-01-15");
+Console.WriteLine($"USD on {historical.Date}: {historical.Rate} PLN");
+
+// Test date range
+Console.WriteLine($"\n-- USD Rates Jan 2024 --");
+var range = client.GetRatesForDateRange("USD", "2024-01-01", "2024-01-10");
+foreach (var r in range)
+    Console.WriteLine($"{r.Date}: {r.Rate} PLN");
+
 ((IClientChannel)client).Close();
 factory.Close();

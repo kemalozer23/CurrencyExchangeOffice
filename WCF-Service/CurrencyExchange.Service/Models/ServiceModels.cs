@@ -25,3 +25,11 @@ public class TransactionResult
     [DataMember] public decimal Rate { get; set; }
     [DataMember] public DateTime Date { get; set; }
 }
+
+[DataContract]
+public class HistoricalRateResult
+{
+    [DataMember] public string Currency { get; set; } = string.Empty;
+    [DataMember] public string Date { get; set; } = string.Empty;
+    [DataMember] public decimal Rate { get; set; }
+}

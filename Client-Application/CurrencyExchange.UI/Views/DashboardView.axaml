@@ -1,0 +1,83 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:CurrencyExchange.UI.ViewModels"
+             x:DataType="vm:DashboardViewModel"
+             x:Class="CurrencyExchange.UI.Views.DashboardView">
+
+    <ScrollViewer>
+        <StackPanel Margin="24" Spacing="16">
+
+            <!-- Header -->
+            <Grid ColumnDefinitions="*,Auto">
+                <TextBlock Text="{Binding Username, StringFormat='👋 Welcome, {0}'}"
+                           FontSize="20" FontWeight="Bold" Foreground="White"/>
+                <Button Grid.Column="1" Content="Logout" Command="{Binding LogoutCommand}"
+                        Background="#f38ba8" Foreground="#1e1e2e" FontWeight="Bold"
+                        Padding="12,6" CornerRadius="8"/>
+            </Grid>
+
+            <!-- Balances -->
+            <TextBlock Text="Your Balances" Foreground="#888" FontSize="13"/>
+            <ItemsControl ItemsSource="{Binding Balances}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="#313244" CornerRadius="8" Padding="16,10" Margin="0,4">
+                            <Grid ColumnDefinitions="*,Auto">
+                                <TextBlock Text="{Binding Currency}" Foreground="White" FontWeight="Bold"/>
+                                <TextBlock Grid.Column="1" Text="{Binding Amount, StringFormat='{}{0:F2}'}"
+                                           Foreground="#a6e3a1" FontWeight="Bold"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <!-- Top Up -->
+            <TextBlock Text="Top Up PLN" Foreground="#888" FontSize="13" Margin="0,8,0,0"/>
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                <TextBox Grid.Column="0" PlaceholderText="Amount in PLN" Text="{Binding TopUpAmount}"
+                         Background="#313244" Foreground="White" BorderThickness="0"
+                         Padding="12" CornerRadius="8"/>
+                <Button Grid.Column="1" Content="Top Up" Command="{Binding TopUpCommand}"
+                        Background="#89b4fa" Foreground="#1e1e2e" FontWeight="Bold"
+                        Padding="12" CornerRadius="8"/>
+            </Grid>
+
+            <!-- Exchange -->
+            <TextBlock Text="Exchange Currency" Foreground="#888" FontSize="13" Margin="0,8,0,0"/>
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="8">
+                <TextBox Grid.Column="0" PlaceholderText="Currency (e.g. USD)" Text="{Binding Currency}"
+                         Background="#313244" Foreground="White" BorderThickness="0"
+                         Padding="12" CornerRadius="8"/>
+                <TextBox Grid.Column="1" PlaceholderText="Amount" Text="{Binding TradeAmount}"
+                         Background="#313244" Foreground="White" BorderThickness="0"
+                         Padding="12" CornerRadius="8"/>
+            </Grid>
+            <Grid ColumnDefinitions="*,*,*" ColumnSpacing="8">
+                <Button Grid.Column="0" Content="Check Rate" Command="{Binding CheckRateCommand}"
+                        Background="#cba6f7" Foreground="#1e1e2e" FontWeight="Bold"
+                        Padding="12" CornerRadius="8" HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Center"/>
+                <Button Grid.Column="1" Content="Buy" Command="{Binding BuyCommand}"
+                        Background="#a6e3a1" Foreground="#1e1e2e" FontWeight="Bold"
+                        Padding="12" CornerRadius="8" HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Center"/>
+                <Button Grid.Column="2" Content="Sell" Command="{Binding SellCommand}"
+                        Background="#fab387" Foreground="#1e1e2e" FontWeight="Bold"
+                        Padding="12" CornerRadius="8" HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Center"/>
+            </Grid>
+
+            <!-- Message -->
+            <TextBlock Text="{Binding Message}" Foreground="#89dceb"
+                       HorizontalAlignment="Center"
+                       IsVisible="{Binding Message, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+
+            <!-- History Button -->
+            <Button Content="📋 View Transaction History" Command="{Binding ViewHistoryCommand}"
+                    Background="#313244" Foreground="White"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                    Padding="12" CornerRadius="8" Margin="0,8,0,0"/>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

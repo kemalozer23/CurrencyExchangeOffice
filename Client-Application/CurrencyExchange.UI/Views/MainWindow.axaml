@@ -1,0 +1,27 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:CurrencyExchange.UI.ViewModels"
+        xmlns:views="using:CurrencyExchange.UI.Views"
+        x:DataType="vm:MainViewModel"
+        x:Class="CurrencyExchange.UI.Views.MainWindow"
+        Title="Currency Exchange Office"
+        Width="500" Height="600"
+        Background="#1e1e2e">
+
+    <ContentControl Content="{Binding CurrentView}">
+        <ContentControl.DataTemplates>
+            <DataTemplate DataType="{x:Type vm:LoginViewModel}">
+                <views:LoginView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:RegisterViewModel}">
+                <views:RegisterView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:DashboardViewModel}">
+                <views:DashboardView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:HistoryViewModel}">
+                <views:HistoryView/>
+            </DataTemplate>
+        </ContentControl.DataTemplates>
+    </ContentControl>
+</Window>

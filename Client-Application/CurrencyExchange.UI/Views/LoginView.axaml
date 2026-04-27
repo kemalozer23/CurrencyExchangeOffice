@@ -1,0 +1,34 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:CurrencyExchange.UI.ViewModels"
+             x:DataType="vm:LoginViewModel"
+             x:Class="CurrencyExchange.UI.Views.LoginView">
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="16" Width="300">
+        <TextBlock Text="💱 Currency Exchange" FontSize="24" FontWeight="Bold"
+                   Foreground="White" HorizontalAlignment="Center"/>
+        <TextBlock Text="Sign in to your account" Foreground="#888"
+                   HorizontalAlignment="Center"/>
+
+        <TextBox PlaceholderText="Username" Text="{Binding Username}"
+                 Background="#313244" Foreground="White" BorderThickness="0"
+                 Padding="12" CornerRadius="8"/>
+
+        <TextBox PlaceholderText="Password" Text="{Binding Password}"
+                 PasswordChar="●" Background="#313244" Foreground="White"
+                 BorderThickness="0" Padding="12" CornerRadius="8"/>
+
+        <TextBlock Text="{Binding Message}" Foreground="#f38ba8"
+                   HorizontalAlignment="Center" IsVisible="{Binding Message, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+
+        <Button Content="Login" Command="{Binding LoginCommand}"
+                Background="#89b4fa" Foreground="#1e1e2e" FontWeight="Bold"
+                HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                Padding="12" CornerRadius="8"/>
+
+        <Button Content="Don't have an account? Register"
+                Command="{Binding GoToRegisterCommand}"
+                Background="Transparent" Foreground="#888"
+                HorizontalAlignment="Center" BorderThickness="0"/>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,43 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:CurrencyExchange.UI.ViewModels"
+             x:DataType="vm:HistoryViewModel"
+             x:Class="CurrencyExchange.UI.Views.HistoryView">
+
+    <StackPanel Margin="24" Spacing="16">
+        <Grid ColumnDefinitions="Auto,*">
+            <Button Content="← Back" Command="{Binding BackCommand}"
+                    Background="#313244" Foreground="White"
+                    Padding="12,6" CornerRadius="8"/>
+            <TextBlock Grid.Column="1" Text="Transaction History" FontSize="20"
+                       FontWeight="Bold" Foreground="White"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+
+        <ItemsControl ItemsSource="{Binding Transactions}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border Background="#313244" CornerRadius="8" Padding="16,10" Margin="0,4">
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Border Grid.Column="0" CornerRadius="4" Padding="6,2" Margin="0,0,12,0"
+                                    Background="{Binding Type, Converter={StaticResource TypeToColorConverter}}">
+                                <TextBlock Text="{Binding Type}" Foreground="#1e1e2e" FontWeight="Bold" FontSize="12"/>
+                            </Border>
+                            <StackPanel Grid.Column="1">
+                                <TextBlock Text="{Binding Currency}" Foreground="White" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Date, StringFormat='{}{0:yyyy-MM-dd HH:mm}'}"
+                                           Foreground="#888" FontSize="12"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="2" HorizontalAlignment="Right">
+                                <TextBlock Text="{Binding Amount, StringFormat='{}{0:F2}'}"
+                                           Foreground="White" FontWeight="Bold" HorizontalAlignment="Right"/>
+                                <TextBlock Text="{Binding Rate, StringFormat='@ {0:F4} PLN'}"
+                                           Foreground="#888" FontSize="12"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </StackPanel>
+</UserControl>

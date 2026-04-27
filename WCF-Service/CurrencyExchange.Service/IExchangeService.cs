@@ -38,4 +38,10 @@ public interface IExchangeService
     // Lab 6 - History
     [OperationContract]
     List<TransactionResult> GetTransactionHistory(string username);
+    
+    [OperationContract]
+    HistoricalRateResult GetHistoricalRate(string currencyCode, string date);
+
+    [OperationContract]
+    List<HistoricalRateResult> GetRatesForDateRange(string currencyCode, string startDate, string endDate);
 }

@@ -232,4 +232,50 @@ public class ExchangeService : IExchangeService
             })
             .ToList();
     }
+    
+    // ── Historical Rates ───────────────────────────────────────
+
+    public HistoricalRateResult GetHistoricalRate(string currencyCode, string date)
+    {
+        try
+        {
+            var url = $"http://api.nbp.pl/api/exchangerates/rates/A/{currencyCode}/{date}/?format=json";
+            var response = HttpClient.GetStringAsync(url).Result;
+            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            var nbpResponse = JsonSerializer.Deserialize<NbpResponse>(response, options);
+
+            return new HistoricalRateResult
+            {
+                Currency = currencyCode.ToUpper(),
+                Date = date,
+                Rate = nbpResponse?.Rates[0].Mid ?? 0
+            };
+        }
+        catch (Exception ex)
+        {
+            throw new Exception($"Could not fetch historical rate for {currencyCode} on {date}: {ex.Message}");
+        }
+    }
+
+    public List<HistoricalRateResult> GetRatesForDateRange(string currencyCode, string startDate, string endDate)
+    {
+        try
+        {
+            var url = $"http://api.nbp.pl/api/exchangerates/rates/A/{currencyCode}/{startDate}/{endDate}/?format=json";
+            var response = HttpClient.GetStringAsync(url).Result;
+            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            var nbpResponse = JsonSerializer.Deserialize<NbpResponse>(response, options);
+
+            return nbpResponse?.Rates.Select(r => new HistoricalRateResult
+            {
+                Currency = currencyCode.ToUpper(),
+                Date = r.EffectiveDate,
+                Rate = r.Mid
+            }).ToList() ?? new List<HistoricalRateResult>();
+        }
+        catch (Exception ex)
+        {
+            throw new Exception($"Could not fetch rates for {currencyCode} between {startDate} and {endDate}: {ex.Message}");
+        }
+    }
 }
