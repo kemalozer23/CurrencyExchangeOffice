@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "59qrtBC6SN3XefabU3TnaFVEpcvI5DhNdozC3se/fs0=",
+  "Source": "CurrencyExchange.Host",
+  "BasePath": "_content/CurrencyExchange.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
