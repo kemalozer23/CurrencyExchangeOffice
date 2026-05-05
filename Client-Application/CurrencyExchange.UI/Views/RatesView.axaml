@@ -1,0 +1,102 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:CurrencyExchange.UI.ViewModels"
+             xmlns:models="using:CurrencyExchange.Service.Models"
+             x:DataType="vm:RatesViewModel"
+             x:Class="CurrencyExchange.UI.Views.RatesView">
+
+    <ScrollViewer>
+        <StackPanel Margin="24" Spacing="16">
+
+            <!-- Header -->
+            <Grid ColumnDefinitions="Auto,*">
+                <Button Content="← Back" Command="{Binding BackCommand}"
+                        Background="#313244" Foreground="White"
+                        Padding="12,6" CornerRadius="8"/>
+                <TextBlock Grid.Column="1" Text="Exchange Rates" FontSize="20"
+                           FontWeight="Bold" Foreground="White"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+
+            <!-- Currency Input -->
+            <TextBlock Text="Currency Code" Foreground="#888" FontSize="13"/>
+            <TextBox PlaceholderText="e.g. USD, EUR, GBP" Text="{Binding Currency}"
+                     Background="#313244" Foreground="White" BorderThickness="0"
+                     Padding="12" CornerRadius="8"/>
+
+            <!-- Current Rate -->
+            <TextBlock Text="Current Rate" Foreground="#888" FontSize="13" Margin="0,8,0,0"/>
+            <Button Content="Check Current Rate" Command="{Binding CheckCurrentRateCommand}"
+                    Background="#89b4fa" Foreground="#1e1e2e" FontWeight="Bold"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                    Padding="12" CornerRadius="8"/>
+
+            <Border Background="#313244" CornerRadius="8" Padding="16,10"
+                    IsVisible="{Binding CurrentRate, Converter={x:Static ObjectConverters.IsNotNull}}">
+                <Grid ColumnDefinitions="*,Auto">
+                    <TextBlock Text="{Binding Currency}" Foreground="White" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1"
+                               Text="{Binding CurrentRate, StringFormat='1 = {0:F4} PLN'}"
+                               Foreground="#a6e3a1" FontWeight="Bold"/>
+                </Grid>
+            </Border>
+
+            <!-- Single Date -->
+            <TextBlock Text="Rate on Specific Date" Foreground="#888" FontSize="13" Margin="0,8,0,0"/>
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                <TextBox Grid.Column="0" PlaceholderText="yyyy-MM-dd" Text="{Binding SingleDate}"
+                         Background="#313244" Foreground="White" BorderThickness="0"
+                         Padding="12" CornerRadius="8"/>
+                <Button Grid.Column="1" Content="Check" Command="{Binding CheckSingleDateCommand}"
+                        Background="#cba6f7" Foreground="#1e1e2e" FontWeight="Bold"
+                        Padding="12" CornerRadius="8"/>
+            </Grid>
+
+            <Border Background="#313244" CornerRadius="8" Padding="16,10"
+                    IsVisible="{Binding SingleResult, Converter={x:Static ObjectConverters.IsNotNull}}">
+                <Grid ColumnDefinitions="*,Auto">
+                    <TextBlock Text="{Binding SingleResult.Date}" Foreground="#888"/>
+                    <TextBlock Grid.Column="1"
+                               Text="{Binding SingleResult.Rate, StringFormat='1 = {0:F4} PLN'}"
+                               Foreground="#a6e3a1" FontWeight="Bold"/>
+                </Grid>
+            </Border>
+
+            <!-- Date Range -->
+            <TextBlock Text="Rates for Date Range" Foreground="#888" FontSize="13" Margin="0,8,0,0"/>
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="8">
+                <TextBox Grid.Column="0" PlaceholderText="Start yyyy-MM-dd" Text="{Binding StartDate}"
+                         Background="#313244" Foreground="White" BorderThickness="0"
+                         Padding="12" CornerRadius="8"/>
+                <TextBox Grid.Column="1" PlaceholderText="End yyyy-MM-dd" Text="{Binding EndDate}"
+                         Background="#313244" Foreground="White" BorderThickness="0"
+                         Padding="12" CornerRadius="8"/>
+            </Grid>
+            <Button Content="Load Rate History" Command="{Binding CheckRangeCommand}"
+                    Background="#fab387" Foreground="#1e1e2e" FontWeight="Bold"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                    Padding="12" CornerRadius="8"/>
+
+            <ItemsControl ItemsSource="{Binding RangeResults}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate DataType="{x:Type models:HistoricalRateResult}">
+                        <Border Background="#313244" CornerRadius="8" Padding="16,8" Margin="0,2">
+                            <Grid ColumnDefinitions="*,Auto">
+                                <TextBlock Text="{Binding Date}" Foreground="#888"/>
+                                <TextBlock Grid.Column="1"
+                                           Text="{Binding Rate, StringFormat='1 = {0:F4} PLN'}"
+                                           Foreground="White" FontWeight="Bold"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <!-- Message -->
+            <TextBlock Text="{Binding Message}" Foreground="#89dceb"
+                       HorizontalAlignment="Center"
+                       IsVisible="{Binding Message, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

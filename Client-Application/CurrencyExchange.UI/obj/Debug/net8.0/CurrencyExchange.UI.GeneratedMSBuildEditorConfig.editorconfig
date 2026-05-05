@@ -45,5 +45,8 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [/Users/kemalozer/Desktop/CurrencyExchangeOffice/Client-Application/CurrencyExchange.UI/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/Users/kemalozer/Desktop/CurrencyExchangeOffice/Client-Application/CurrencyExchange.UI/Views/RatesView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/Users/kemalozer/Desktop/CurrencyExchangeOffice/Client-Application/CurrencyExchange.UI/Views/RegisterView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

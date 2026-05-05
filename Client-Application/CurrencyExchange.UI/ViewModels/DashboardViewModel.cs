@@ -32,6 +32,7 @@ public class DashboardViewModel : ViewModelBase
         ViewHistoryCommand = new RelayCommand(() => _main.NavigateToHistory(username));
         LogoutCommand = new RelayCommand(() => _main.NavigateToLogin());
         CheckRateCommand = new RelayCommand(CheckRate);
+        ViewRatesCommand = new RelayCommand(() => _main.NavigateToRates(username));
 
         LoadBalances();
     }
@@ -49,6 +50,7 @@ public class DashboardViewModel : ViewModelBase
     public ICommand ViewHistoryCommand { get; }
     public ICommand LogoutCommand { get; }
     public ICommand CheckRateCommand { get; }
+    public ICommand ViewRatesCommand { get; }
 
     private void LoadBalances()
     {

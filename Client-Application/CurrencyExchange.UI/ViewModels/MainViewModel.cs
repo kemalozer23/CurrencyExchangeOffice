@@ -33,4 +33,7 @@ public class MainViewModel : ViewModelBase
 
     public void NavigateToHistory(string username)
         => CurrentView = new HistoryViewModel(this, _exchangeClient, username);
+    
+    public void NavigateToRates(string username)
+        => CurrentView = new RatesViewModel(this, _exchangeClient, username);
 }

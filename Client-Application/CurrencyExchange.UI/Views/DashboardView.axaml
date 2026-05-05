@@ -72,6 +72,11 @@
             <TextBlock Text="{Binding Message}" Foreground="#89dceb"
                        HorizontalAlignment="Center"
                        IsVisible="{Binding Message, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"/>
+            
+            <Button Content="📈 View Exchange Rates" Command="{Binding ViewRatesCommand}"
+                    Background="#313244" Foreground="White"
+                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                    Padding="12" CornerRadius="8"/>
 
             <!-- History Button -->
             <Button Content="📋 View Transaction History" Command="{Binding ViewHistoryCommand}"
