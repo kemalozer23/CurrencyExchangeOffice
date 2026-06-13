@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../build/CurrencyExchange.Host.props" />
-</Project>
