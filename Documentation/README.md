@@ -64,3 +64,23 @@ dotnet run
 cd Client-Application/CurrencyExchange.UI
 dotnet run
 ```
+
+## Screenshots
+
+### Login
+![Login](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard1.png)
+![Dashboard](screenshots/dashboard2.png)
+![Dashboard](screenshots/dashboard3.png)
+![Dashboard](screenshots/dashboard4.png)
+![Dashboard](screenshots/dashboard5.png)
+
+### Exchange Rates
+
+![Rates](screenshots/rates1.png)
+![Rates](screenshots/rates2.png)
+
+### Transaction History
+![History](screenshots/history.png)
